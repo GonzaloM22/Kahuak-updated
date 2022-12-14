@@ -10,13 +10,13 @@ const IndumentariaProvider = ({ children }) => {
   const [modal, setModal] = useState(false);
 
   const getTrabajos = async () => {
-    const { data } = await axios('/api/productos/api/trabajos');
+    const { data } = await axios('/api/trabajos');
 
     setTrabajos(data);
   };
 
   const getProductos = async () => {
-    const { data } = await axios('/api/productos/api/productos');
+    const { data } = await axios('/api/productos');
 
     setProductos(data);
   };
