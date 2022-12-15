@@ -9,22 +9,13 @@ const IndumentariaProvider = ({ children }) => {
   const [producto, setProducto] = useState([]);
   const [modal, setModal] = useState(false);
 
-  const getTrabajos = async () => {
-    const { data } = await axios('/api/trabajos');
-
+  const getTrabajos = async (data) => {
     setTrabajos(data);
   };
 
-  const getProductos = async () => {
-    const { data } = await axios('/api/productos');
-
+  const getProductos = async (data) => {
     setProductos(data);
   };
-
-  useEffect(() => {
-    getTrabajos();
-    getProductos();
-  }, []);
 
   const handleChangeModal = (producto) => {
     setProducto(producto);
@@ -33,7 +24,15 @@ const IndumentariaProvider = ({ children }) => {
 
   return (
     <IndumentariaContext.Provider
-      value={{ productos, trabajos, modal, producto, handleChangeModal }}
+      value={{
+        productos,
+        trabajos,
+        modal,
+        producto,
+        handleChangeModal,
+        getProductos,
+        getTrabajos,
+      }}
     >
       {children}
     </IndumentariaContext.Provider>

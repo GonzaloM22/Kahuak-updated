@@ -12,6 +12,7 @@ const Carousel = ({ trabajos }) => {
   return (
     <div>
       <Swiper
+        className="-z-50"
         autoplay={{ delay: 3000 }}
         pagination={{
           dynamicBullets: true,
@@ -42,9 +43,9 @@ const Carousel = ({ trabajos }) => {
           },
         }}
       >
-        {trabajos.map((trabajo) => (
-          <SwiperSlide key={trabajo.codigo}>
-            <Trabajo trabajo={trabajo} />
+        {trabajos?.map((trabajo) => (
+          <SwiperSlide key={trabajo.codigo} className="-z-50">
+            <Trabajo trabajo={trabajo} className="-z-50" />
           </SwiperSlide>
         ))}
       </Swiper>

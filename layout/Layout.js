@@ -64,8 +64,8 @@ export default function Layout({ children, title = '' }) {
       <div
         className={
           icons
-            ? `fixed p-4 bottom-0 right-0 z-[900] ease-in-out duration-700`
-            : `fixed p-4 bottom-0 right-[-100px] z-[900] ease-out duration-700`
+            ? `fixed p-4 bottom-0 right-0 z-50 ease-in-out duration-700 `
+            : `fixed p-4 bottom-0 right-[-100px] z-50 ease-out duration-700 `
         }
       >
         <Link

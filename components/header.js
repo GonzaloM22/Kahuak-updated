@@ -39,10 +39,10 @@ const Header = () => {
         urlActual == '/productos' ||
         urlActual == '/empresa' ||
         urlActual == '/contacto'
-          ? 'bg-zinc-900/95  w-full z-[100]'
+          ? 'bg-zinc-900/95  w-full z-[100] '
           : shadow
-          ? 'shadow-2xl fixed w-full z-[100]'
-          : 'fixed w-full z-[100]'
+          ? 'shadow-2xl fixed w-full z-[100] '
+          : 'fixed w-full z-[100] '
       }
     >
       <div

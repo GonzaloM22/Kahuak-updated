@@ -1,9 +1,15 @@
+import { PrismaClient } from '@prisma/client';
+import { useEffect } from 'react';
 import Producto from '../components/producto';
 import useIndumentaria from '../hooks/useIndumentaria';
 import Layout from '../layout/Layout';
 
-export default function productos() {
-  const { productos } = useIndumentaria();
+export default function productos({ productosDB }) {
+  const { productos, getProductos } = useIndumentaria();
+
+  useEffect(() => {
+    getProductos(productosDB);
+  }, []);
 
   return (
     <Layout title="Productos">
@@ -17,7 +23,7 @@ export default function productos() {
           </h4>
 
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {productos.map((producto) => (
+            {productos?.map((producto) => (
               <Producto key={producto.codigoproducto} producto={producto} />
             ))}
           </div>
@@ -26,3 +32,11 @@ export default function productos() {
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  const prisma = new PrismaClient();
+
+  const productosDB = await prisma.productos.findMany();
+
+  return { props: { productosDB } };
+};

@@ -1,10 +1,12 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import useIndumentaria from '../hooks/useIndumentaria';
 
 const Producto = ({ producto }) => {
   const { handleChangeModal } = useIndumentaria();
   const { nombre, imagen } = producto;
+
+  const router = useRouter();
   return (
     <main className="shadow rounded-md p-3 ">
       <Image
@@ -12,7 +14,7 @@ const Producto = ({ producto }) => {
         width={500}
         height={500}
         alt="Producto"
-        className="object-cover md:w-96 md:h-96 "
+        //className="object-cover md:w-96 md:h-96 "
       />
 
       <div className="p-5">
@@ -22,6 +24,7 @@ const Producto = ({ producto }) => {
         type="button"
         className="w-full bg-amber-500/70 p-3 hover:text-zinc-900 hover:bg-amber-500/90 text-white cursor-pointer rounded-sm transition ease-in duration-300 uppercase shadow-md font-semibold tracking-widest text-xs"
         onClick={() => {
+          router.push('/productos');
           handleChangeModal(producto);
         }}
       >
