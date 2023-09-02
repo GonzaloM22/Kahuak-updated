@@ -152,7 +152,7 @@ const Header = () => {
                   className={`${
                     urlActual === '/contacto'
                       ? 'text-zinc-900 cursor-pointer p-1 bg-amber-500/70'
-                      : 'hover:text-zinc-900 ease-in duration-200 cursor-pointer bg-amber-500/70 p-1 hover:scale-110  rounded-xs'
+                      : 'hover:text-zinc-900 ease-in duration-200 cursor-pointer bg-amber-500/70 p-1 hover:scale-110  rounded-sm'
                   }
 }`}
                 >
@@ -214,7 +214,7 @@ const Header = () => {
                     Inicio
                   </li>
                 </Link>
-                <Link href="/#categorias">
+                <Link href="/productos">
                   <li
                     onClick={handleShowMenu}
                     className="py-5 text-sm hover:text-amber-500/70 duration-300 border-b border-gray-200 cursor-pointer"
@@ -222,7 +222,7 @@ const Header = () => {
                     Productos
                   </li>
                 </Link>
-                <Link href="/#empresa">
+                <Link href="/empresa">
                   <li
                     onClick={handleShowMenu}
                     className="py-5 text-sm hover:text-amber-500/70 duration-300 border-b border-gray-200 cursor-pointer"
@@ -230,7 +230,7 @@ const Header = () => {
                     Empresa
                   </li>
                 </Link>
-                <Link href="/#contacto">
+                <Link href="/contacto">
                   <li
                     onClick={handleShowMenu}
                     className="py-5 text-sm hover:text-amber-500/70 duration-300 border-b border-gray-200 cursor-pointer"

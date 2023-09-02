@@ -46,7 +46,7 @@ const FormContacto = () => {
 
       <div>
         <input
-          className="w-full px-3 py-2 border border-gray-300 rounded-sm placeholder-neutral-400 font-normal outline-none"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400 font-normal outline-none"
           placeholder="Nombre"
           type="text"
           name="name"
@@ -56,7 +56,7 @@ const FormContacto = () => {
       </div>
       <div>
         <input
-          className="w-full px-3 py-2 border border-gray-300 rounded-sm placeholder-neutral-400 outline-none font-normal"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400 outline-none font-normal"
           placeholder="Telefono"
           type="text"
           name="phone"
@@ -67,7 +67,7 @@ const FormContacto = () => {
 
       <div>
         <input
-          className="w-full px-3 py-2 border border-gray-300 rounded-sm placeholder-neutral-400  outline-none font-normal"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400  outline-none font-normal"
           placeholder="Email"
           type="email"
           name="email"
@@ -77,7 +77,7 @@ const FormContacto = () => {
       </div>
       <div>
         <textarea
-          className="w-full px-3 py-2 border border-gray-300 rounded-sm placeholder-neutral-400  outline-none font-normal"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400  outline-none font-normal"
           name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -86,7 +86,7 @@ const FormContacto = () => {
         ></textarea>
       </div>
       {!spinner ? (
-        <button className="w-full bg-amber-500/70 p-4 hover:text-zinc-900 hover:bg-amber-500/90 text-white cursor-pointer rounded-sm transition ease-in duration-300 uppercase shadow-lg font-semibold tracking-widest">
+        <button className="w-full bg-amber-500/70 p-4 hover:text-zinc-900 hover:bg-amber-500/90 text-white cursor-pointer rounded-md transition ease-in duration-300 uppercase shadow-lg font-semibold tracking-widest">
           Enviar Mensaje
         </button>
       ) : (

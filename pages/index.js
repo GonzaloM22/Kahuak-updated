@@ -36,7 +36,7 @@ export default function Home({ productosDB, trabajosDB }) {
 
         <Link
           href="/productos"
-          className="bg-amber-500/70 p-4 hover:text-zinc-900 hover:bg-amber-500/90 text-white cursor-pointer rounded-sm transition ease-in duration-300 uppercase shadow-md font-semibold tracking-widest text-xs"
+          className="bg-amber-500/70 p-4 hover:text-zinc-900 hover:bg-amber-500/90 text-white cursor-pointer rounded-md transition ease-in duration-300 uppercase shadow-md font-semibold tracking-widest text-xs"
         >
           Todos los Productos
         </Link>
