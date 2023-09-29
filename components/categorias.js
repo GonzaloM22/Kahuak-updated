@@ -29,7 +29,7 @@ const Categorias = () => {
           </Link>
           <span className="absolute bottom-5 left-10 z-50 ">Sanidad</span>
         </div>
-        <div className="relative  hover:brightness-125 shadow-sm mb-2">
+        <div className="relative hover:brightness-125 shadow-sm mb-2">
           <Link href="/productos">
             <Image
               width={150}
@@ -59,7 +59,7 @@ const Categorias = () => {
               width={150}
               height={300}
               src="/img/publico.jpg"
-              alt="Servicio Publico"
+              alt="Servicio público"
               className="object-cover brightness-50 rounded-sm hover:scale-105 ease-in duration-200 h-full"
             />
           </Link>

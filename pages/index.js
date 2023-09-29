@@ -5,12 +5,19 @@ import Categorias from '../components/categorias';
 import Hero from '../components/hero';
 import Producto from '../components/producto';
 import Servicios from '../components/Servicio';
+import { useRouter } from 'next/router';
 import Layout from '../layout/Layout';
 import useIndumentaria from '../hooks/useIndumentaria';
 import Carousel from '../components/carousel';
 
 export default function Home({ productosDB, trabajosDB }) {
   const { getProductos, getTrabajos, productos, trabajos } = useIndumentaria();
+  const router = useRouter();
+  const currentPath = router.asPath;
+
+  useEffect(() => {
+    router.push(currentPath);
+  }, [currentPath]);
 
   useEffect(() => {
     getProductos(productosDB);
@@ -38,7 +45,7 @@ export default function Home({ productosDB, trabajosDB }) {
           href="/productos"
           className="bg-amber-500/70 p-4 hover:text-zinc-900 hover:bg-amber-500/90 text-white cursor-pointer rounded-md transition ease-in duration-300 uppercase shadow-md font-semibold tracking-widest text-xs"
         >
-          Todos los Productos
+          Todos los productos
         </Link>
       </div>
 
@@ -55,7 +62,7 @@ export default function Home({ productosDB, trabajosDB }) {
         <h1 className="text-2xl text-center py-2 md:py-16 md:text-4xl font-semibold">
           Trabajos{' '}
           <span className="text-amber-500/70 border-b-4 border-amber-500/40">
-            Realizados
+            realizados
           </span>
         </h1>
 

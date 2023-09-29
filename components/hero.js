@@ -11,16 +11,16 @@ const Hero = () => {
 
       <div className="text-neutral-300 text-4xl md:text-6xl font-light absolute h-md top-64 left-4 md:top-[360px] md:left-32">
         <h1 className="font-medium md:w-72 lg:w-full">
-          Indumentaria de Trabajo
+          Indumentaria de trabajo
         </h1>
 
         <p className="py-4 text-xs md:text-xl font-light md:w-[540px] lg:w-[700px]">
           Realizamos productos con los{' '}
-          <span className="text-amber-500/70">Mejores</span> Stánderes de
-          Calidad
+          <span className="text-amber-500/70">mejores</span> stánderes de
+          calidad
         </p>
         <p className="text-xs md:text-base font-extralight md:w-[540px] lg:w-[700px]">
-          Calidad Nacional de uso Internacional
+          Calidad nacional de uso internacional
         </p>
       </div>
     </div>

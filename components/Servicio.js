@@ -5,7 +5,7 @@ const Servicios = () => {
         data-aos="zoom-out"
         className="text-gray-100/80 text-lg md:text-2xl font-bold lg:w-[850px] mx-auto"
       >
-        Brindamos Servicios Personalizados coordinando la visita a su empresa
+        Brindamos servicios personalizados coordinando la visita a su empresa
       </p>
     </div>
   );

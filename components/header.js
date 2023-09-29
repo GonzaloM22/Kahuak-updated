@@ -59,7 +59,7 @@ const Header = () => {
         >
           <MdLocationPin size={15} className="text-amber-500/70" />
           <span className="text-xs md:text-base hover:text-amber-500/60 font-light ease-in duration-200">
-            Lujan de Cuyo, Mendoza
+            Lujan de cuyo, Mendoza
           </span>
         </Link>
         <div className="flex space-x-2 md:space-x-20">
@@ -70,7 +70,7 @@ const Header = () => {
           >
             <AiFillPhone size={15} className="text-amber-500/70" />
             <span className="text-xs md:text-base  hover:text-amber-500/60 font-normal ease-in duration-200">
-              0351 156256538
+              3516256538
             </span>
           </Link>
           <ul className="text-white flex items-center space-x-4">
