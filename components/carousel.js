@@ -1,24 +1,26 @@
+"use client";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
+import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper/modules';
+
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Trabajo from './trabajo';
 
-const Carousel = ({ trabajos }) => {
-  SwiperCore.use([Autoplay, Navigation]);
+const Carousel = ({ works }) => {
+
 
   return (
     <div>
       <Swiper
         className="-z-50"
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 2500 }}
         pagination={{
           dynamicBullets: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[ Autoplay, Pagination, Navigation]}
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -43,9 +45,9 @@ const Carousel = ({ trabajos }) => {
           },
         }}
       >
-        {trabajos?.map((trabajo) => (
-          <SwiperSlide key={trabajo.codigo} className="-z-50">
-            <Trabajo trabajo={trabajo} className="-z-50" />
+        {works?.map((work) => (
+          <SwiperSlide key={work.id} className="-z-50">
+            <Trabajo work={work} className="-z-50" />
           </SwiperSlide>
         ))}
       </Swiper>

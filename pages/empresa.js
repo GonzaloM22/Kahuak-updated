@@ -1,20 +1,15 @@
-//import Aos from 'aos';
-//import 'aos/dist/aos.css';
 import Image from 'next/image';
-import { useEffect } from 'react';
 import Layout from '../layout/Layout';
 
 export default function Empresa() {
-  // useEffect(() => {
-  //  Aos.init({ duration: 2000, once: true });
-  //}, []);
+
   return (
     <Layout title="Empresa">
       <div className="bg-gray-100 p-8 flex flex-col md:flex-row items-center md:justify-center md:space-x-20 h-[80vh]">
         <Image
           width={400}
           height={1500}
-          src="/img/empresa.svg"
+          src="/img/empresa/empresa.svg"
           alt="imagen"
           className="object-cover rounded-lg"
         />

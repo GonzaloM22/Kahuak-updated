@@ -1,0 +1,391 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Buzo polar antipilin con refuerzos",
+      "category": "buzos",
+      "image": "/img/productos/Buzos/buzo1.png",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "Camisa antidesgarro",
+      "category": "camisas",
+      "image": "/img/productos/Camisas/camisa1.png",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "Campera baston con manta siliconada",
+      "category": "camperas",
+      "image": "/img/productos/Camperas/campera1.png",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "Campera polar antipilin",
+      "category": "camperas",
+      "image": "/img/productos/Camperas/campera2.png",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "Campera de tracker",
+      "category": "camperas",
+      "image": "/img/productos/Camperas/campera3.png",
+      "visible": true
+    },
+    {
+      "id": 6,
+      "name": "Campera de Softshell",
+      "category": "camperas",
+      "image": "/img/productos/Camperas/campera4.png",
+      "visible": true
+    },
+    {
+      "id": 7,
+      "name": "Campera de Softshell",
+      "category": "camperas",
+      "image": "/img/productos/Camperas/campera5.png",
+      "visible": true
+    },
+    {
+      "id": 8,
+      "name": "Producto 3",
+      "category": "camperas",
+      "image": "/img/productos/Camperas/campera5.png",
+      "visible": false
+    },
+    {
+      "id": 9,
+      "name": "Chaleco de manta siliconada",
+      "category": "chalecos",
+      "image": "/img/productos/Chalecos/chaleco1.png",
+      "visible": true
+    },
+    {
+      "id": 10,
+      "name": "Chaleco de tracker forrada con polar",
+      "category": "chalecos",
+      "image": "/img/productos/Chalecos/chaleco2.png",
+      "visible": true
+    },
+    {
+      "id": 11,
+      "name": "Chaqueta de chef",
+      "category": "sanidad",
+      "image": "/img/productos/Chaquetas/chaqueta1.png",
+      "visible": true
+    },
+    {
+      "id": 12,
+      "name": "Chaqueta sanidad/gastronomia",
+      "category": "sanidad",
+      "image": "/img/productos/Chaquetas/chaqueta2.png",
+      "visible": true
+    },
+    {
+      "id": 13,
+      "name": "Chaqueta sanidad/gastronomia",
+      "category": "sanidad",
+      "image": "/img/productos/Chaquetas/chaqueta3.png",
+      "visible": true
+    },
+    {
+      "id": 14,
+      "name": "Producto 3",
+      "category": "chombas",
+      "image": "/img/productos/Chombas/chomba1.jpg",
+      "visible": false
+    },
+    {
+      "id": 15,
+      "name": "Remera de jersey de algodón peinado",
+      "category": "chombas",
+      "image": "/img/productos/Chombas/chomba2.png",
+      "visible": true
+    },
+    {
+      "id": 16,
+      "name": "Chomba de pique",
+      "category": "chombas",
+      "image": "/img/productos/Chombas/chomba3.png",
+      "visible": true
+    },
+    {
+      "id": 17,
+      "name": "Chomba de jersey de algodón peinado con cuello y puños de tejido",
+      "category": "chombas",
+      "image": "/img/productos/Chombas/chomba4.png",
+      "visible": true
+    },
+    {
+      "id": 18,
+      "name": "Chomba",
+      "category": "chombas",
+      "image": "/img/productos/Chombas/chomba5.png",
+      "visible": true
+    },
+    {
+      "id": 19,
+      "name": "Mameluco con cinta reflectaria y logo personalizado",
+      "category": "mamelucos",
+      "image": "/img/productos/Mamelucos/mameluco1.png",
+      "visible": true
+    },
+    {
+      "id": 20,
+      "name": "Pantalón de gastronomia/sanidad",
+      "category": "pantalones",
+      "image": "/img/productos/Pantalones/pantalon1.png",
+      "visible": true
+    },
+    {
+      "id": 21,
+      "name": "Producto 3",
+      "category": "pantalones",
+      "image": "/img/productos/Pantalones/pantalon2.png",
+      "visible": false
+    },
+    {
+      "id": 22,
+      "name": "Pantalón cargo antidesgarro y reforzados con ristop",
+      "category": "pantalones",
+      "image": "/img/productos/Pantalones/pantalon3.png",
+      "visible": true
+    },
+    {
+      "id": 23,
+      "name": "Pantalón cargo antidesgarro y reforzados con ristop",
+      "category": "pantalones",
+      "image": "/img/productos/Pantalones/pantalon4.jpg",
+      "visible": true
+    },
+    {
+      "id": 24,
+      "name": "Remera de jersey de algodón peinado",
+      "category": "remeras",
+      "image": "/img/productos/Remeras/remera1.png",
+      "visible": true
+    },
+    {
+      "id": 25,
+      "name": "Remera de jersey de algodón peinado",
+      "category": "remeras",
+      "image": "/img/productos/Remeras/remera2.png",
+      "visible": true
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "image": "/img/trabajos/trabajo1.png",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "image": "/img/trabajos/trabajo2.jpg",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "image": "/img/trabajos/trabajo3.jpg",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "image": "/img/trabajos/trabajo4.jpg",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "image": "/img/trabajos/trabajo5.jpg",
+      "visible": true
+    },
+    {
+      "id": 6,
+      "image": "/img/trabajos/trabajo6.jpg",
+      "visible": true
+    },
+    {
+      "id": 7,
+      "image": "/img/trabajos/trabajo7.jpg",
+      "visible": true
+    },
+    {
+      "id": 8,
+      "image": "/img/trabajos/trabajo8.jpg",
+      "visible": true
+    },
+    {
+      "id": 9,
+      "image": "/img/trabajos/trabajo9.jpg",
+      "visible": true
+    },
+    {
+      "id": 10,
+      "image": "/img/trabajos/trabajo10.jpg",
+      "visible": true
+    },
+    {
+      "id": 11,
+      "image": "/img/trabajos/trabajo11.jpg",
+      "visible": true
+    },
+    {
+      "id": 12,
+      "image": "/img/trabajos/trabajo12.png",
+      "visible": true
+    },
+    {
+      "id": 13,
+      "image": "/img/trabajos/trabajo13.png",
+      "visible": true
+    },
+    {
+      "id": 14,
+      "image": "/img/trabajos/trabajo14.jpg",
+      "visible": true
+    },
+    {
+      "id": 15,
+      "image": "/img/trabajos/trabajo15.jpg",
+      "visible": true
+    },
+    {
+      "id": 16,
+      "image": "/img/trabajos/trabajo16.jpg",
+      "visible": true
+    },
+    {
+      "id": 17,
+      "image": "/img/trabajos/trabajo17.jpg",
+      "visible": true
+    },
+    {
+      "id": 18,
+      "image": "/img/trabajos/trabajo18.jpg",
+      "visible": true
+    },
+    {
+      "id": 19,
+      "image": "/img/trabajos/trabajo19.jpg",
+      "visible": true
+    },
+    {
+      "id": 20,
+      "image": "/img/trabajos/trabajo20.jpg",
+      "visible": true
+    },
+    {
+      "id": 21,
+      "image": "/img/trabajos/trabajo21.jpg",
+      "visible": true
+    },
+    {
+      "id": 22,
+      "image": "/img/trabajos/trabajo22.jpg",
+      "visible": true
+    },
+    {
+      "id": 23,
+      "image": "/img/trabajos/trabajo23.jpg",
+      "visible": true
+    },
+    {
+      "id": 24,
+      "image": "/img/trabajos/trabajo24.jpg",
+      "visible": true
+    },
+    {
+      "id": 25,
+      "image": "/img/trabajos/trabajo25.png",
+      "visible": true
+    },
+    {
+      "id": 26,
+      "image": "/img/trabajos/trabajo26.png",
+      "visible": true
+    },
+    {
+      "id": 27,
+      "image": "/img/trabajos/trabajo27.png",
+      "visible": true
+    },
+    {
+      "id": 28,
+      "image": "/img/trabajos/trabajo28.png",
+      "visible": true
+    },
+    {
+      "id": 29,
+      "image": "/img/trabajos/trabajo29.png",
+      "visible": true
+    },
+    {
+      "id": 30,
+      "image": "/img/trabajos/trabajo30.png",
+      "visible": true
+    },
+    {
+      "id": 31,
+      "image": "/img/trabajos/trabajo31.jpg",
+      "visible": true
+    },
+    {
+      "id": 32,
+      "image": "/img/trabajos/trabajo32.jpg",
+      "visible": true
+    },
+    {
+      "id": 33,
+      "image": "/img/trabajos/trabajo33.jpg",
+      "visible": true
+    },
+    {
+      "id": 34,
+      "image": "/img/trabajos/trabajo34.png",
+      "visible": true
+    },
+    {
+      "id": 35,
+      "image": "/img/trabajos/trabajo35.png",
+      "visible": true
+    },
+    {
+      "id": 36,
+      "image": "/img/trabajos/trabajo36.jpg",
+      "visible": true
+    },
+    {
+      "id": 37,
+      "image": "/img/trabajos/trabajo37.jpg",
+      "visible": true
+    },
+    {
+      "id": 38,
+      "image": "/img/trabajos/trabajo38.jpg",
+      "visible": true
+    },
+    {
+      "id": 39,
+      "image": "/img/trabajos/trabajo39.jpg",
+      "visible": true
+    },
+    {
+      "id": 40,
+      "image": "/img/trabajos/trabajo40.png",
+      "visible": true
+    },
+    {
+      "id": 41,
+      "image": "/img/trabajos/trabajo41.png",
+      "visible": true
+    },
+    {
+      "id": 42,
+      "image": "/img/trabajos/trabajo42.png",
+      "visible": true
+    }
+  ]
+}

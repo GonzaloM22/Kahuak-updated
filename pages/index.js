@@ -1,34 +1,30 @@
 import { useEffect } from 'react';
-import { PrismaClient } from '@prisma/client';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Categorias from '../components/categorias';
 import Hero from '../components/hero';
-import Producto from '../components/producto';
+import data from '../data.json';
 import Servicios from '../components/Servicio';
-import { useRouter } from 'next/router';
 import Layout from '../layout/Layout';
-import useIndumentaria from '../hooks/useIndumentaria';
 import Carousel from '../components/carousel';
+import Producto from '../components/producto';
 
-export default function Home({ productosDB, trabajosDB }) {
-  const { getProductos, getTrabajos, productos, trabajos } = useIndumentaria();
+export default function Home() {
   const router = useRouter();
   const currentPath = router.asPath;
+
+  const { products, works } = data;
 
   useEffect(() => {
     router.push(currentPath);
   }, [currentPath]);
 
-  useEffect(() => {
-    getProductos(productosDB);
-    getTrabajos(trabajosDB);
-  }, []);
 
-  const productosSlice = productos?.slice(0, 4);
-  const primerCarousel = trabajos?.slice(0, Math.ceil(trabajos?.length / 2));
-  const segundoCarousel = trabajos?.slice(
-    Math.ceil(trabajos?.length / 2),
-    trabajos?.length
+  const productsSlice = products.slice(0, 4);
+  const primerCarousel = works?.slice(0, Math.ceil(works?.length / 2));
+  const segundoCarousel = works?.slice(
+    Math.ceil(works?.length / 2),
+    works?.length
   );
 
   return (
@@ -36,50 +32,39 @@ export default function Home({ productosDB, trabajosDB }) {
       <Hero />
       <Categorias />
 
-      <div className="flex flex-col space-y-4 md:flex-row items-center justify-around py-2 md:py-16 overflow-visible">
-        <h1 className="text-2xl text-center md:text-4xl font-semibold text-amber-500 border-b-4 border-amber-500/70 py-1">
+      <div className="flex flex-col space-y-4 md:flex-row items-center justify-between py-2 px-44 md:py-16 overflow-visible">
+        <h1 className="text-2xl md:text-4xl font-semibold text-amber-500 border-b-2 border-amber-500/70 py-1">
           Productos
         </h1>
 
         <Link
           href="/productos"
-          className="bg-amber-500/70 p-4 hover:text-zinc-900 hover:bg-amber-500/90 text-white cursor-pointer rounded-md transition ease-in duration-300 uppercase shadow-md font-semibold tracking-widest text-xs"
+          className="text-zinc-700 p-4 hover:text-amber-500 cursor-pointer rounded-md transition ease-in duration-300 font-semibold tracking-widest"
         >
-          Todos los productos
+          Ver todos
         </Link>
       </div>
 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 pb-24 px-10 md:px-44">
-        {productos?.length > 0 &&
-          productosSlice?.map((producto) => (
-            <Producto key={producto.codigoproducto} producto={producto} />
-          ))}
+        {productsSlice?.map(
+          (product) =>
+            product.visible && <Producto key={product.id} product={product} />
+        )}
       </div>
 
       <Servicios />
 
       <div className="pb-24 px-5 2xl:px-44">
-        <h1 className="text-2xl text-center py-2 md:py-16 md:text-4xl font-semibold">
+        <h1 className="text-2xl text-left py-2 md:py-16 md:text-4xl font-semibold">
           Trabajos{' '}
-          <span className="text-amber-500/70 border-b-4 border-amber-500/40">
+          <span className="text-amber-500/70 border-b-2 border-amber-500/40">
             realizados
           </span>
         </h1>
 
-        <Carousel trabajos={primerCarousel} />
-        <Carousel trabajos={segundoCarousel} />
+        <Carousel works={primerCarousel} />
+        <Carousel works={segundoCarousel} />
       </div>
     </Layout>
   );
 }
-
-export const getStaticProps = async () => {
-  const prisma = new PrismaClient();
-
-  const [productosDB, trabajosDB] = await Promise.all([
-    prisma.productos.findMany(),
-    prisma.trabajos.findMany(),
-  ]);
-
-  return { props: { productosDB, trabajosDB } };
-};

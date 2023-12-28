@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['tailwindui.com', 'res.cloudinary.com'],
+    domains: ['tailwindui.com'],
     unoptimized: true,
   },
 };

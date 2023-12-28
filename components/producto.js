@@ -3,9 +3,9 @@ import { Tooltip } from 'react-tooltip';
 import Image from 'next/image';
 import useIndumentaria from '../hooks/useIndumentaria';
 
-const Producto = ({ producto }) => {
+const Producto = ({ product }) => {
   const { handleChangeModal } = useIndumentaria();
-  const { nombre, imagen } = producto;
+  const { name, image } = product ?? {};
 
   const router = useRouter();
 
@@ -13,8 +13,8 @@ const Producto = ({ producto }) => {
     <main className="shadow rounded-md p-3 ">
       <Image
         data-tooltip-id="name-tooltip-image"
-        data-tooltip-content={nombre}
-        src={imagen}
+        data-tooltip-content={name}
+        src={image}
         width={350}
         height={450}
         alt="Producto"
@@ -25,10 +25,10 @@ const Producto = ({ producto }) => {
       <div className="p-5">
         <span
           data-tooltip-id="name-tooltip"
-          data-tooltip-content={nombre}
+          data-tooltip-content={name}
           className="text-xl font-semibold capitalize cut-text"
         >
-          {nombre.toLowerCase()}
+          {name?.toLowerCase()}
         </span>
       </div>
       <Tooltip id="name-tooltip" />
@@ -37,7 +37,7 @@ const Producto = ({ producto }) => {
         className="w-full bg-amber-500/70 p-3 hover:text-zinc-900 hover:bg-amber-500/90 text-white cursor-pointer rounded-md transition ease-in duration-300 uppercase shadow-md font-semibold tracking-widest text-xs"
         onClick={() => {
           router.push('/productos');
-          handleChangeModal(producto);
+          handleChangeModal(product);
         }}
       >
         Consultar

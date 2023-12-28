@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-const Trabajo = ({ trabajo }) => {
-  const { imagen } = trabajo;
+const Trabajo = ({ work }) => {
+  const { image } = work;
 
   return (
     <main className="shadow rounded-md p-3 -z-50">
       <Image
-        src={imagen}
+        src={image}
         width={500}
         height={500}
         alt="Producto"

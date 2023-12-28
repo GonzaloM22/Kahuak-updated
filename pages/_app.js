@@ -1,4 +1,4 @@
-import { IndumentariaProvider } from '../context/IndumentariaProvider';
+import { IndumentariaProvider } from "../context/IndumentariaProvider";
 import '../styles/globals.css';
 import '../public/css/spinner.css';
 

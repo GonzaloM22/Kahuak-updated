@@ -46,7 +46,7 @@ const FormContacto = () => {
 
       <div>
         <input
-          className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400 font-normal outline-none"
+          className="text-zinc-700 w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400 font-normal outline-none"
           placeholder="Nombre"
           type="text"
           name="name"
@@ -56,7 +56,7 @@ const FormContacto = () => {
       </div>
       <div>
         <input
-          className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400 outline-none font-normal"
+          className="text-zinc-700 w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400 outline-none font-normal"
           placeholder="Telefono"
           type="text"
           name="phone"
@@ -67,7 +67,7 @@ const FormContacto = () => {
 
       <div>
         <input
-          className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400  outline-none font-normal"
+          className="text-zinc-700 w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400  outline-none font-normal"
           placeholder="Email"
           type="email"
           name="email"
@@ -77,7 +77,7 @@ const FormContacto = () => {
       </div>
       <div>
         <textarea
-          className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400  outline-none font-normal"
+          className="text-zinc-700 w-full px-3 py-2 border border-gray-300 rounded-md placeholder-neutral-400  outline-none font-normal"
           name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}

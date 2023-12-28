@@ -12,7 +12,7 @@ const Contacto = () => {
                 data-aos="fade-up"
                 className=" text-3xl md:text-4xl font-semibold text-center mt-14"
               >
-                Comunicate con Nosotros
+                Comunicate con nosotros
               </h3>
               <p
                 data-aos="fade-up"
