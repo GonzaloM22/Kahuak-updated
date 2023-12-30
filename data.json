@@ -3,140 +3,140 @@
     {
       "id": 1,
       "name": "Buzo polar antipilin con refuerzos",
-      "category": "buzos",
+      "category": "industria-automotriz",
       "image": "/img/productos/Buzos/buzo1.png",
       "visible": true
     },
     {
       "id": 2,
       "name": "Camisa antidesgarro",
-      "category": "camisas",
+      "category": "industria-automotriz",
       "image": "/img/productos/Camisas/camisa1.png",
       "visible": true
     },
     {
       "id": 3,
       "name": "Campera baston con manta siliconada",
-      "category": "camperas",
+      "category": "industria",
       "image": "/img/productos/Camperas/campera1.png",
       "visible": true
     },
     {
       "id": 4,
       "name": "Campera polar antipilin",
-      "category": "camperas",
+      "category": "industria",
       "image": "/img/productos/Camperas/campera2.png",
       "visible": true
     },
     {
       "id": 5,
       "name": "Campera de tracker",
-      "category": "camperas",
+      "category": "industria",
       "image": "/img/productos/Camperas/campera3.png",
       "visible": true
     },
     {
       "id": 6,
       "name": "Campera de Softshell",
-      "category": "camperas",
+      "category": "industria",
       "image": "/img/productos/Camperas/campera4.png",
       "visible": true
     },
     {
       "id": 7,
       "name": "Campera de Softshell",
-      "category": "camperas",
+      "category": "industria",
       "image": "/img/productos/Camperas/campera5.png",
       "visible": true
     },
     {
       "id": 8,
       "name": "Producto 3",
-      "category": "camperas",
+      "category": "industria",
       "image": "/img/productos/Camperas/campera5.png",
       "visible": false
     },
     {
       "id": 9,
       "name": "Chaleco de manta siliconada",
-      "category": "chalecos",
+      "category": "industria",
       "image": "/img/productos/Chalecos/chaleco1.png",
       "visible": true
     },
     {
       "id": 10,
       "name": "Chaleco de tracker forrada con polar",
-      "category": "chalecos",
+      "category": "industria",
       "image": "/img/productos/Chalecos/chaleco2.png",
       "visible": true
     },
     {
       "id": 11,
       "name": "Chaqueta de chef",
-      "category": "sanidad",
+      "category": "sanidad-gastronomia",
       "image": "/img/productos/Chaquetas/chaqueta1.png",
       "visible": true
     },
     {
       "id": 12,
       "name": "Chaqueta sanidad/gastronomia",
-      "category": "sanidad",
+      "category": "sanidad-gastronomia",
       "image": "/img/productos/Chaquetas/chaqueta2.png",
       "visible": true
     },
     {
       "id": 13,
       "name": "Chaqueta sanidad/gastronomia",
-      "category": "sanidad",
+      "category": "sanidad-gastronomia",
       "image": "/img/productos/Chaquetas/chaqueta3.png",
       "visible": true
     },
     {
       "id": 14,
       "name": "Producto 3",
-      "category": "chombas",
+      "category": "automotriz",
       "image": "/img/productos/Chombas/chomba1.jpg",
       "visible": false
     },
     {
       "id": 15,
       "name": "Remera de jersey de algodón peinado",
-      "category": "chombas",
+      "category": "automotriz",
       "image": "/img/productos/Chombas/chomba2.png",
       "visible": true
     },
     {
       "id": 16,
       "name": "Chomba de pique",
-      "category": "chombas",
+      "category": "automotriz",
       "image": "/img/productos/Chombas/chomba3.png",
       "visible": true
     },
     {
       "id": 17,
       "name": "Chomba de jersey de algodón peinado con cuello y puños de tejido",
-      "category": "chombas",
+      "category": "automotriz",
       "image": "/img/productos/Chombas/chomba4.png",
       "visible": true
     },
     {
       "id": 18,
       "name": "Chomba",
-      "category": "chombas",
+      "category": "automotriz",
       "image": "/img/productos/Chombas/chomba5.png",
       "visible": true
     },
     {
       "id": 19,
       "name": "Mameluco con cinta reflectaria y logo personalizado",
-      "category": "mamelucos",
+      "category": "automotriz",
       "image": "/img/productos/Mamelucos/mameluco1.png",
       "visible": true
     },
     {
       "id": 20,
       "name": "Pantalón de gastronomia/sanidad",
-      "category": "pantalones",
+      "category": "sanidad-gastronomia",
       "image": "/img/productos/Pantalones/pantalon1.png",
       "visible": true
     },
@@ -150,29 +150,86 @@
     {
       "id": 22,
       "name": "Pantalón cargo antidesgarro y reforzados con ristop",
-      "category": "pantalones",
+      "category": "automotriz",
       "image": "/img/productos/Pantalones/pantalon3.png",
       "visible": true
     },
     {
       "id": 23,
       "name": "Pantalón cargo antidesgarro y reforzados con ristop",
-      "category": "pantalones",
+      "category": "automotriz",
       "image": "/img/productos/Pantalones/pantalon4.jpg",
       "visible": true
     },
     {
       "id": 24,
       "name": "Remera de jersey de algodón peinado",
-      "category": "remeras",
+      "category": "automotriz",
       "image": "/img/productos/Remeras/remera1.png",
       "visible": true
     },
     {
       "id": 25,
       "name": "Remera de jersey de algodón peinado",
-      "category": "remeras",
+      "category": "automotriz",
       "image": "/img/productos/Remeras/remera2.png",
+      "visible": true
+    },
+    {
+      "id": 26,
+      "name": "Ambo de acrosel a medida",
+      "category": "sanidad",
+      "image": "/img/productos/Chaquetas/chaqueta4.png",
+      "visible": true
+    },
+    {
+      "id": 27,
+      "name": "Chaqueta, pantalón, ambos",
+      "category": "gastronomia",
+      "image": "/img/productos/Chaquetas/chaqueta5.png",
+      "visible": false
+    },
+    {
+      "id": 28,
+      "name": "Chaqueta, pantalón, ambos",
+      "category": "gastronomia",
+      "image": "/img/productos/Chaquetas/chaqueta6.png",
+      "visible": true
+    },
+    {
+      "id": 29,
+      "name": "Cofias",
+      "category": "gastronomia-sanidad",
+      "image": "/img/productos/Chaquetas/chaqueta7.png",
+      "visible": true
+    },
+    {
+      "id": 30,
+      "name": "Ambos/chaqueta/pantalón",
+      "category": "sanidad",
+      "image": "/img/productos/Chaquetas/chaqueta8.png",
+      "visible": true
+    }
+    ,
+    {
+      "id": 31,
+      "name": "Delantales para gastronomía, colores varios",
+      "category": "gastronomia",
+      "image": "/img/productos/Gastronomia/gastronomia1.jpg",
+      "visible": true
+    } ,
+    {
+      "id": 32,
+      "name": "Delantales/cofias",
+      "category": "gastronomia",
+      "image": "/img/productos/Gastronomia/gastronomia2.jpg",
+      "visible": true
+    },
+    {
+      "id": 33,
+      "name": "Delantales/cofias",
+      "category": "gastronomia",
+      "image": "/img/productos/Gastronomia/gastronomia3.jpg",
       "visible": true
     }
   ],

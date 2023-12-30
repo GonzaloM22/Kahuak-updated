@@ -15,7 +15,7 @@ export default function productos({ productosDB }) {
   useEffect(() => {
     if (url && products.length) {
       const filteredProducts = products.filter(
-        (product) => product.category === url
+        (product) => product.category.includes(url) 
       );
       setCategoryPorductos(filteredProducts);
     }

@@ -53,32 +53,6 @@ const Categorias = () => {
           </Link>
           <span className="absolute bottom-5 left-8 z-50 ">Automotriz</span>
         </div>
-        <div className="relative  hover:brightness-125 shadow-sm mb-2">
-          <Link href="/productos/publico">
-            <Image
-              width={150}
-              height={300}
-              src="/img/categorias/publico.jpg"
-              alt="Servicio público"
-              className="object-cover brightness-50 rounded-sm hover:scale-105 ease-in duration-200 h-full"
-            />
-          </Link>
-          <span className="absolute bottom-5 left-5 z-50 ">
-            Servicio Público
-          </span>
-        </div>
-        <div className="relative  hover:brightness-125 shadow-sm mb-2">
-          <Link href="/productos/comercio">
-            <Image
-              width={150}
-              height={300}
-              src="/img/categorias/comercio.png"
-              alt="Comercio"
-              className="object-cover brightness-50 rounded-sm hover:scale-105 ease-in duration-200 h-full"
-            />
-          </Link>
-          <span className="absolute bottom-5 left-8 z-50">Comercio</span>
-        </div>
       </div>
     </main>
   );
