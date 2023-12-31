@@ -24,14 +24,14 @@ const Footer = () => {
                 <FaFacebook size={35} />
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="https://www.instagram.com/kahuakindumentaria"
                 target="_blank"
               >
                 <AiFillInstagram size={40} />
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -82,14 +82,14 @@ const Header = () => {
                 <FiFacebook size={20} />
               </Link>
             </li>
-            <li className=" hover:text-amber-500/60 ease-in duration-200">
+            {/* <li className=" hover:text-amber-500/60 ease-in duration-200">
               <Link
                 href="https://www.instagram.com/kahuakindumentaria"
                 target="_blank"
               >
                 <AiOutlineInstagram size={20} />
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
