@@ -36,7 +36,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    getRandomProducts();
+    if (products.length) getRandomProducts();
   }, [products]);
 
   return (
