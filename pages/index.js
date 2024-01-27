@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Categorias from '../components/categorias';
@@ -10,6 +10,7 @@ import Carousel from '../components/carousel';
 import Producto from '../components/producto';
 
 export default function Home() {
+  const [randomProducts, setRandomProducts] = useState([]);
   const router = useRouter();
   const currentPath = router.asPath;
 
@@ -19,20 +20,34 @@ export default function Home() {
     router.push(currentPath);
   }, [currentPath]);
 
-
-  const productsSlice = products.slice(0, 4);
   const primerCarousel = works?.slice(0, Math.ceil(works?.length / 2));
   const segundoCarousel = works?.slice(
     Math.ceil(works?.length / 2),
     works?.length
   );
 
+  const getRandomProducts = () => {
+    const randomProducts = [];
+    for (let i = 0; i < 5; i++) {
+      const randomIndice = Math.floor(Math.random() * products.length);
+      randomProducts.push(products[randomIndice]);
+    }
+    setRandomProducts(randomProducts);
+  };
+
+  useEffect(() => {
+    getRandomProducts();
+    const update = setInterval(getRandomProducts, 12 * 60 * 60 * 1000);
+
+    return () => clearInterval(update);
+  }, [products]);
+
   return (
     <Layout title="Inicio">
       <Hero />
       <Categorias />
 
-      <div className="flex flex-col space-y-4 md:flex-row items-center justify-between py-2 px-44 md:py-16 overflow-visible">
+      <div className="flex flex-col space-y-4 md:flex-row items-center justify-between py-2 md:px-44 md:py-16 overflow-visible">
         <h1 className="text-2xl md:text-4xl font-semibold text-amber-500 border-b-2 border-amber-500/70 py-1">
           Productos
         </h1>
@@ -46,7 +61,7 @@ export default function Home() {
       </div>
 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 pb-24 px-10 md:px-44">
-        {productsSlice?.map(
+        {randomProducts?.map(
           (product) =>
             product.visible && <Producto key={product.id} product={product} />
         )}
