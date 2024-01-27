@@ -37,9 +37,6 @@ export default function Home() {
 
   useEffect(() => {
     getRandomProducts();
-    const update = setInterval(getRandomProducts, 12 * 60 * 60 * 1000);
-
-    return () => clearInterval(update);
   }, [products]);
 
   return (
