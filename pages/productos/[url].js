@@ -28,8 +28,8 @@ export default function productos({ productosDB }) {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-900 ">
             Nuestros <span className="text-amber-500">productos</span>
           </h1>
-          <h4 className="text-gray-600 text-sm font-medium my-4">
-            Ropa de trabajo
+          <h4 className="text-gray-600 text-sm font-medium my-4 capitalize">
+            {url}
           </h4>
 
           <div className="grid gap-4 grid-cols-1 min-h-[calc(100vh-539px)] md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">

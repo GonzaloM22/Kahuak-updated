@@ -5,6 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 const ModalProducto = () => {
   const { producto, handleChangeModal } = useIndumentaria();
+
   return (
     <div className="md:flex gap-10 z-50 ">
       <div className="md:w-1/3">
@@ -12,7 +13,7 @@ const ModalProducto = () => {
           width={300}
           height={400}
           alt={`Imagen Producto`}
-          src={producto.imagen}
+          src={producto.image}
           className="h-96 w-96 object-cover"
         />
       </div>
@@ -23,8 +24,8 @@ const ModalProducto = () => {
           </button>
         </div>
 
-        <h1 className="text-3xl font-bold text-center p-2 md:p-4">
-          {producto.nombre}
+        <h1 className="text-2xl text-center p-2 md:p-4">
+          {producto.name}
         </h1>
         <FormContacto />
       </div>

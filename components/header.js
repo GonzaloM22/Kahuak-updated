@@ -33,12 +33,14 @@ const Header = () => {
     window.addEventListener('scroll', handleShadow);
   }, []);
 
+  const routes = ['productos', 'empresa', 'contacto'];
+
+  const checkUrl = routes.some((r) => urlActual.includes(r));
+
   return (
     <header
       className={
-        urlActual == '/productos' ||
-        urlActual == '/empresa' ||
-        urlActual == '/contacto'
+        checkUrl
           ? 'bg-zinc-900/95  w-full z-[100] '
           : shadow
           ? 'shadow-2xl fixed w-full z-[100] '
