@@ -2,11 +2,15 @@ import Image from 'next/image';
 import Layout from '../layout/Layout';
 
 export default function Empresa() {
-
   return (
     <Layout title="Empresa">
-      <div className="bg-gray-100 p-8 flex flex-col md:flex-row items-center md:justify-center md:space-x-20 h-[80vh]">
+      <div className="bg-gray-100 p-8 flex flex-col md:flex-row items-center md:justify-center md:space-x-20 h-[80vh]"
+      >
         <Image
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
           width={400}
           height={1500}
           src="/img/empresa/empresa.svg"

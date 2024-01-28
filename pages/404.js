@@ -3,7 +3,7 @@ import Layout from '../layout/Layout';
 
 const NoEncontrado = () => {
   return (
-    <Layout title="No encontrado">
+    <Layout title="No encontrado" notFound={true}>
       <div className="flex flex-col justify-center items-center h-[70vh] space-y-4">
         <h1 className="text-black text-xl font-semibold">
           Pagina no encontrada

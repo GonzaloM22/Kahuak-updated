@@ -23,7 +23,7 @@ const customStyles = {
 
 Modal.setAppElement('#__next');
 
-export default function Layout({ children, title = '' }) {
+export default function Layout({ children, title = '', notFound = false }) {
   const router = useRouter();
   const urlActual = router.asPath;
 
@@ -51,7 +51,7 @@ export default function Layout({ children, title = '' }) {
         />
       </Head>
 
-      <Header />
+      <Header notFound={notFound}/>
       {children}
       <Footer />
 

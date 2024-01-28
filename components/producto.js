@@ -10,7 +10,11 @@ const Producto = ({ product }) => {
   const router = useRouter();
 
   return (
-    <main className="shadow rounded-md p-3 ">
+    <main
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="shadow rounded-md p-3 "
+    >
       <Image
         data-tooltip-id="name-tooltip-image"
         data-tooltip-content={name}

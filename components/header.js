@@ -11,7 +11,7 @@ import {
 import { MdLocationPin } from 'react-icons/md';
 import { FiFacebook } from 'react-icons/fi';
 
-const Header = () => {
+const Header = ({notFound = false}) => {
   const router = useRouter();
   const urlActual = router.asPath;
 
@@ -35,7 +35,7 @@ const Header = () => {
 
   const routes = ['productos', 'empresa', 'contacto'];
 
-  const checkUrl = routes.some((r) => urlActual.includes(r));
+  const checkUrl = routes.some((r) => urlActual.includes(r) || notFound);
 
   return (
     <header

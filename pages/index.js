@@ -38,6 +38,7 @@ export default function Home() {
   useEffect(() => {
     if (products.length) getRandomProducts();
   }, [products]);
+  
 
   return (
     <Layout title="Inicio">
@@ -57,7 +58,10 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 pb-24 px-10 md:px-44">
+      <div
+        className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+        2xl:grid-cols-4 pb-24 px-10 md:px-44"
+      >
         {randomProducts?.map(
           (product) =>
             product.visible && <Producto key={product.id} product={product} />
