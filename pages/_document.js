@@ -19,6 +19,10 @@ export default function Document() {
           rel="stylesheet"
           href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
         />
+        <meta
+          name="google-site-verification"
+          content="AfLwCan6EWrxCIvaDyJS0xRO7LRkDziHeObnKChEjBM"
+        />
       </Head>
       <body>
         <Main />
